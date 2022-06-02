@@ -1,4 +1,4 @@
-export const users = [
+export let users = [
   { name: "Person 1", email: "email1@", active: true },
   { name: "Person 2", email: "email2@", active: false },
   { name: "Person 3", email: "email3@", active: true },
