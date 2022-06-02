@@ -16,9 +16,7 @@ const initDB = async () => {
   });
 
   client.connect(async (err) => {
-    // const collection = client.db("test").collection("devices");
     const collection = await client.db("myFirstDatabase").collection("people");
-    // const data = collection.find({});
     const dbData = await collection.find({}).toArray();
     console.log(dbData);
     // const data = await res.json(dbData);
