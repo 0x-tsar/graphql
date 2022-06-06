@@ -20,7 +20,6 @@ const initDB = async () => {
     const dbData = await collection.find({}).toArray();
     console.log(dbData);
     // const data = await res.json(dbData);
-    // perform actions on the collection object
     console.log(`connected`);
     client.close();
   });
