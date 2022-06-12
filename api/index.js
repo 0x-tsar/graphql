@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import { ApolloServer, gql } from "apollo-server";
 import { MongoClient } from "mongodb";
-import { users } from "./data.js";
+import { users } from "../data.js";
 
 const initDB = async () => {
   const DB_NAME = process.env.DB_NAME;
