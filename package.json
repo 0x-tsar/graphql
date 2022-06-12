@@ -12,7 +12,8 @@
     "apollo-server": "^3.8.1",
     "dotenv": "^16.0.1",
     "mongodb": "^4.6.0",
-    "mongoose": "^6.3.5"
+    "mongoose": "^6.3.5",
+    "vercel": "^25.1.0"
   },
   "devDependencies": {
     "esbuild": "^0.14.43",
