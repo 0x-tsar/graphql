@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "nodemon run ./index.js"
+    "dev": "nodemon run ./index.js",
+    "build": "esbuild ./api/index.js --platform=node --bundle --minify --outfile=built/index.js"
   },
   "dependencies": {
     "apollo-server": "^3.8.1",
@@ -14,6 +15,7 @@
     "mongoose": "^6.3.5"
   },
   "devDependencies": {
+    "esbuild": "^0.14.43",
     "graphql": "^16.5.0",
     "nodemon": "^2.0.16"
   }

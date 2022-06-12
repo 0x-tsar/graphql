@@ -91,3 +91,5 @@ initDB();
 const client = new ApolloServer({ typeDefs, resolvers });
 
 client.listen(5000, () => console.log(`🔥 server listening`));
+
+// module.exports = client;
