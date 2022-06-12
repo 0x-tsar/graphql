@@ -29,6 +29,7 @@ const typeDefs = gql`
   type User {
     _id: ID!
     name: String!
+    age: Int!
     email: String!
     active: Boolean!
   }
@@ -47,7 +48,6 @@ const typeDefs = gql`
   }
 
   # MUTATION
-
   type Mutation {
     newUser(name: String, email: String): User
   }
