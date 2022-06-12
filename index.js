@@ -1,6 +1,12 @@
 const express = require("express");
 const app = express();
 
-app.listen(() => {
-  console.log(`listening to server!!`);
+const PORT = 5001;
+
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
+app.listen(PORT, () => {
+  console.log(`listening to PORT ${PORT}`);
 });
