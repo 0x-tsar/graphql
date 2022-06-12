@@ -91,4 +91,6 @@ initDB();
 
 const client = new ApolloServer({ typeDefs, resolvers });
 
-client.listen(5000, () => console.log(`🔥 server listening`));
+client.listen(process.env.PORT || 5002, () =>
+  console.log(`🔥 server listening`)
+);
